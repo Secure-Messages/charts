@@ -36,7 +36,7 @@ jobs:
         ref: 'gh-pages'
         path: 'gh-pages'
         # Use the default GITHUB_TOKEN provided by GitHub Actions
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Copy Helm packages to gh-pages
       run: |
