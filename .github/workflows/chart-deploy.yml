@@ -35,6 +35,7 @@ jobs:
       with:
         ref: 'gh-pages'
         path: 'gh-pages'
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
     - name: Configure Git for gh-pages
       run: |
@@ -56,4 +57,4 @@ jobs:
         cd gh-pages
         git add .
         git commit -m "Update Helm chart packages"
-        git push origin gh-pages
+        git push --force origin gh-pages
