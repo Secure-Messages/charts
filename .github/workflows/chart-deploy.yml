@@ -1,0 +1,50 @@
+name: Release Helm Charts
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'charts/**'
+
+jobs:
+  release-charts:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Configure Git
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+
+    - name: Install Helm
+      uses: azure/setup-helm@v1
+
+    - name: Package Helm Charts
+      run: |
+        helm package charts/nodejs-app-chart --destination .deploy
+        helm package charts/python-app-chart --destination .deploy
+
+    - name: Checkout gh-pages branch
+      uses: actions/checkout@v2
+      with:
+        ref: 'gh-pages'
+        path: 'gh-pages'
+
+    - name: Copy Helm packages to gh-pages
+      run: |
+        cp .deploy/*.tgz gh-pages/
+
+    - name: Reindex Helm repository
+      run: |
+        cd gh-pages
+        helm repo index . --url https://nolabel-tech.github.io/charts
+
+    - name: Commit and push changes
+      run: |
+        cd gh-pages
+        git add .
+        git commit -m "Update Helm chart packages"
+        git push origin gh-pages
