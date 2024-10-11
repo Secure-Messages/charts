@@ -36,6 +36,12 @@ jobs:
         ref: 'gh-pages'
         path: 'gh-pages'
 
+    - name: Configure Git for gh-pages
+      run: |
+        cd gh-pages
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+
     - name: Copy Helm packages to gh-pages
       run: |
         cp .deploy/*.tgz gh-pages/
