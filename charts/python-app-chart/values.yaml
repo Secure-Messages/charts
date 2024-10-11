@@ -31,6 +31,22 @@ podLabels: {}
 podSecurityContext: {}
   # fsGroup: 2000
 
+
+env: {}
+#  - name: APP_HOST
+#    value: "0.0.0.0"
+#  - name: APP_PORT
+#    value: "8000"
+#  - name: POSTGRES_USER
+#    value: "ваш_пользователь"
+#  - name: POSTGRES_PASSWORD
+#    value: "ваш_пароль"
+#  - name: POSTGRES_DB
+#    value: "имя_базы"
+#  - name: POSTGRES_HOST
+#    value: "имя_сервиса_postgresql"
+
+
 securityContext: {}
   # capabilities:
   #   drop:
