@@ -3,7 +3,7 @@ entries:
   nodejs-app-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-11T08:18:59.024579753Z"
+    created: "2024-10-11T11:21:50.800273871Z"
     description: A Helm chart for Kubernetes
     digest: 6ea2c8e183fba3424a6e2e91525a04478f21bc195b3c57e4d0cb275d0dc26d9b
     name: nodejs-app-chart
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-11T08:18:59.02417799Z"
+    created: "2024-10-11T11:21:50.799872319Z"
     description: A Helm chart for Kubernetes
     digest: 537b8a1f16f4ec32aeac50a071339c108ca8b32d1ae3543b6d9107549e3a5c14
     name: nodejs-app-chart
@@ -24,7 +24,17 @@ entries:
   python-app-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-11T08:18:59.024970163Z"
+    created: "2024-10-11T11:21:50.801025379Z"
+    description: A Helm chart for Kubernetes
+    digest: 4fe6392b9cee4d18b9666b6302320b8d06757f7e9d408794f00ceae76b7d881e
+    name: python-app-chart
+    type: application
+    urls:
+    - https://secure-messages.github.io/charts/python-app-chart-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-10-11T11:21:50.800679772Z"
     description: A Helm chart for Kubernetes
     digest: 9c3a4c4a05364575b1a829a1c1b7c167ffdd9e37c62473e00455e98d02a67842
     name: python-app-chart
@@ -32,4 +42,4 @@ entries:
     urls:
     - https://secure-messages.github.io/charts/python-app-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-11T08:18:59.022909335Z"
+generated: "2024-10-11T11:21:50.798594495Z"
