@@ -3,7 +3,7 @@ entries:
   nodejs-app-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-11T11:41:49.778690862Z"
+    created: "2024-10-11T20:17:04.58800945Z"
     description: A Helm chart for Kubernetes
     digest: 6ea2c8e183fba3424a6e2e91525a04478f21bc195b3c57e4d0cb275d0dc26d9b
     name: nodejs-app-chart
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-11T11:41:49.777862448Z"
+    created: "2024-10-11T20:17:04.587187837Z"
     description: A Helm chart for Kubernetes
     digest: 537b8a1f16f4ec32aeac50a071339c108ca8b32d1ae3543b6d9107549e3a5c14
     name: nodejs-app-chart
@@ -24,7 +24,17 @@ entries:
   python-app-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-11T11:41:49.779988488Z"
+    created: "2024-10-11T20:17:04.589486673Z"
+    description: A Helm chart for Kubernetes
+    digest: 29fedebc96fee88c49152ea6e1ccba1ab21687aefbc4c6ed468c87f51a2f4544
+    name: python-app-chart
+    type: application
+    urls:
+    - https://secure-messages.github.io/charts/python-app-chart-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-10-11T20:17:04.589097946Z"
     description: A Helm chart for Kubernetes
     digest: fb139bfe5e6219c6683b121e40ecaac56d94b22533db45eba935c7a5d61ef797
     name: python-app-chart
@@ -34,7 +44,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-11T11:41:49.77964324Z"
+    created: "2024-10-11T20:17:04.58872602Z"
     description: A Helm chart for Kubernetes
     digest: 4fe6392b9cee4d18b9666b6302320b8d06757f7e9d408794f00ceae76b7d881e
     name: python-app-chart
@@ -44,7 +54,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-10-11T11:41:49.779284577Z"
+    created: "2024-10-11T20:17:04.588381736Z"
     description: A Helm chart for Kubernetes
     digest: 9c3a4c4a05364575b1a829a1c1b7c167ffdd9e37c62473e00455e98d02a67842
     name: python-app-chart
@@ -52,4 +62,4 @@ entries:
     urls:
     - https://secure-messages.github.io/charts/python-app-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-11T11:41:49.776666132Z"
+generated: "2024-10-11T20:17:04.586219877Z"
