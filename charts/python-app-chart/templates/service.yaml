@@ -11,6 +11,5 @@ spec:
       targetPort: {{ .Values.service.targetPort }}
       protocol: TCP
       name: http
-      nodePort: {{ .Values.service.nodePort }}
   selector:
     {{- include "hello-world_flask_app.selectorLabels" . | nindent 4 }}
